@@ -1,0 +1,74 @@
+.body{
+    margin: 0%;
+    padding: 1%;
+    background-color: rgb(4, 129, 167);
+}
+
+.firstdiv{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+.right{
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.result{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.third{
+    display: flex;
+    justify-content: center;
+}
+
+.leftside{
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.rightside{
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+h1{
+    color:deeppink;
+}
+p{
+    color: deeppink;
+}
