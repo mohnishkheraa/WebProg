@@ -1,0 +1,25 @@
+.first
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1rem;
+}
+table
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: azure;
+    margin: 1rem;
+    padding: 1 rem;
+    width: 97.5%;
+}
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
