@@ -1,0 +1,20 @@
+body
+{
+    background-color: yellowgreen;
+}
+div
+{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 8%;
+    background-color: rgb(218, 226, 103);
+    padding: 1rem;
+}
+form
+{
+    text-align: left;
+}
+.required
+{
+color: red;
+}
