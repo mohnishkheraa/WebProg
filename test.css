@@ -72,3 +72,21 @@ h1{
 p{
     color: deeppink;
 }
+@media (max-width: 500px) {
+    .second {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+        flex: 50%;
+    }
+    .third {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+        flex: 50%;
+    }
+}
