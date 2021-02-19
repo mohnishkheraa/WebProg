@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="score.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Score Meter</title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid"> 
+    <ul class="nav navbar-nav">
+      <li ><a href="nav.htm">Home</a></li>
+    </ul>
+</nav>
+    <div class="container">
+    <form id="myform">
+        <div class="form-group">
+    <h1>SCORE METER</h1>
+    <h2>Enter the number of singles, doubles, triples, fours and sixes</h2>
+    <h3>Enter the score Details - </h3> 
+    <input type="text" class="form-control" id="score">
+    <button id="myBtn" onclick="getScore();return false;">Submit</button>
+    <h3>Total Score</h3>
+    <p id="score1"></p>
+</form>
+
+    </div>
+    <script>
+        
+        function getScore()
+        {
+         var x = document.getElementById("score").value;
+         var res=x.split(",");
+         var sum = 0;
+         count=1;
+for (var i = 0; i < res.length; i++) {
+  sum += parseInt(res[i])*count;
+  if(count==4)
+  count=count+2;
+  else
+  count++;
+         document.getElementById("score1").innerHTML=sum;
+}
+        }
+
+</script>
+</body>
+</html>

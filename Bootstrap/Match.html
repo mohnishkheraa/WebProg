@@ -1,0 +1,142 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+<style>
+.f{
+  text-align: center;
+  width: 50%;
+  background-color:#FFE87C;
+  border:solid;
+  padding: 20px;
+  margin-left: 22%;
+}
+.t {
+  margin-left: auto;
+  margin-right: auto;
+}
+  .to{
+    width: 200px;
+    padding: 2px;
+    font-size: 25px;
+  }
+  .bu{
+    width: 50px;
+    height: 30px;
+  position: absolute;
+  left: 38%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  .bot{
+    font-size: 18px;
+    text-align: left;
+    padding: 3px;
+  }
+</style>
+</head>
+<body style="background: url(https://i0.wp.com/www.earthriversup.com/wp-content/uploads/2016/10/Plain-design-pattern-dark-background-image-HD-resolution-latest-pack.jpg;);">
+  <br><br>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">News Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="nav.htm">Home</a></li>
+     <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: grey">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>-->
+      <li ><a href="Score.html">Calculate Score</a></li>
+      <li ><a href="match.html">Calculate Summary</a></li>
+      <li ><a href="vid.html">Find Us</a></li>
+      <li><a href="form.html"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+  </div>
+</nav>
+<div class = "f">
+ <form>
+  <table class = "t" border='0' width='440px' cellpadding='0' cellspacing='0' align='center'>
+    <tr><td colspan="2" align="center"><p class="to"><b>Match Summary</b></p></td></tr>
+    
+    <tr> 
+    <td align='center' style="color: #708090;"><i>Team A<superscript style="color: red;">*</superscript></i></td>
+    <td style = "text-align: center;"><input type="text" id="teama" name="teama" placeholder="Team A" style="width: 200px;" autofocus required><br></td>
+    </tr>
+
+    <tr> <td>&nbsp;</td> </tr>
+    
+    <tr>
+    <td align='center' style="color: #708090;"><i>Team B<superscript style="color: red;">*</superscript></i></td>
+    <td><input type="text" id="teamb" name="teamb" placeholder = "Team B" style="width: 200px;" required><br></td>
+    </tr>
+    <tr> <td>&nbsp;</td> </tr>
+    <tr>
+      <td align='center' style="color: #708090;"><i>Date<superscript style="color: red;">*</superscript></i></td>
+    <td><input type="text" id="date" name="date" pattern=\d{1,2}/\d{1,2}/\d{4 placeholder = "DD/MM/YYYY" style="width: 200px;"><br></td>
+    </tr>
+    <tr> <td>&nbsp;</td> </tr>
+    <tr>
+      <td align='center' style="color: #708090;" ><i>Time<superscript style="color: red;">*</superscript></i></td>
+      <td><input type="time" id="time" name="time" value="00:00:00" placeholder="HH:MM:SS" step="1" style="width: 200px;"><br></td>
+    </tr>
+    <tr> <td>&nbsp;</td> </tr>   
+    <tr>
+      <td align='center' style="color: #708090;" ><i>Team A Score<superscript style="color: red;">*</superscript></i></td>
+      <td><input type="text" id="scoreA" name="scoreA" placeholder = "Runs/Wkts" style="width: 200px;"><br></td>
+    </tr>
+    <tr> <td>&nbsp;</td> </tr>
+
+    <tr>
+      <td align='center' style="color: #708090;"><i>Team B Score<superscript style="color: red;">*</superscript></i></td>
+      <td><input type="text" id="scoreB" name="scoreB" placeholder = "Runs/Wkts" style="width: 200px;"><br></td>
+    </tr>
+    <tr> <td>&nbsp;</td> </tr>
+  <tr><th colspan="2"><input type="submit" name="" onclick="myFunction();return false" value="save">
+  </th></tr>
+  
+  <tr><th>Winning team :</th>
+ <th align="left"><p type id="demo"></p> </th>
+</tr>
+</form>
+<table>
+
+
+</body></table>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("scoreA").value;
+  var y = document.getElementById("scoreB").value;
+  var p = document.getElementById("teama").value
+  var q = document.getElementById("teamb").value
+  var a=x.split("/");
+  var b=y.split("/");
+            
+            var score1=parseInt(a[0]);
+            var score2=parseInt(b[0]);
+  if (score1>score2) {
+  document.getElementById("demo").innerHTML= p;
+}
+else
+{
+  document.getElementById("demo").innerHTML= q;
+}
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>

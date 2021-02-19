@@ -1,0 +1,21 @@
+body
+{
+    background-color: yellowgreen;
+    background: url(https://i0.wp.com/www.earthriversup.com/wp-content/uploads/2016/10/Plain-design-pattern-dark-background-image-HD-resolution-latest-pack.jpg;);
+}
+div
+{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 8%;
+    background-color: rgb(218, 226, 103);
+    padding: 1rem;
+}
+form
+{
+    text-align: left;
+}
+.required
+{
+color: red;
+}
